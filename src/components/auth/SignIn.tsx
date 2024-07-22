@@ -26,7 +26,7 @@ const SignIn: FC<IVisibleSign> = ({activeSign, setActiveSign}) => {
               className='max-600px:mt-[14px] mt-[24px] text-center w-full text-[14px] text-[#3E3E3E]' 
               onClick={() => setActiveSign(prev => ({ ...prev, activeSignIn: false, activeSignUp: true }))}>
                 Don’t have an account? 
-              <span className='text-[#121212] font-medium'>Sign Up</span>
+              <span className='text-[#121212] font-medium'> Sign Up</span>
             </button>
         </div>
     </div>
