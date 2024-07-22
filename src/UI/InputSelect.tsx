@@ -7,8 +7,8 @@ const InputSelect: FC<IInputSelect> = ({type, styles}) => {
 
   return (
     <div className=''>
-        <div className='text-[14px]'>{type === 'Email' ? 'Email' : 'Password'}</div>
-        <div className={`flex w-full px-[16px] py-[14px] border border-[#EDEDED] text-[14px] rounded-[4px] mb-[8px] ${!styles ? '' : styles}`}>
+        <div className='text-[14px] max-600px:text-[12px]'>{type === 'Email' ? 'Email' : 'Password'}</div>
+        <div className={`max-600px:text-[12px] max-600px:px-[8px] max-600px:py-[7px] flex w-full px-[16px] py-[14px] border border-[#EDEDED] text-[14px] rounded-[4px] mb-[8px] ${!styles ? '' : styles}`}>
             <input 
                 className={`w-full border-[0] outline-none`} 
                 placeholder={`Enter your ${type === 'Email' ? 'Email' : 'Password'}`} 
